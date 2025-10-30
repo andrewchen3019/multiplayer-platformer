@@ -4,7 +4,7 @@ A real-time multiplayer 2D platformer built with Node.js, Express, and Socket.IO
 A fast-paced real-time multiplayer platformer built with Node.js, Express, and Socket.IO.
 Players connect to a shared procedurally generated world, collect coins, purchase upgrades, and engage in combat using various weapons and abilities — all rendered client-side via the HTML5 Canvas API.
 
-#🚀 Features
+# 🚀 Features
 
 Multiplayer in real time — Socket.IO handles low-latency bidirectional communication for smooth player updates.
 
@@ -30,7 +30,7 @@ Chat system — Integrated text chat using WebSockets for player communication.
 
 Custom skins and themes — Player avatars (e.g., historical figures or animals) plus optional “America Mode” visuals and music.
 
-#🧩 Architecture
+# 🧩 Architecture
 Server (index.js, users.js)
 
 Built on Express for static file serving.
