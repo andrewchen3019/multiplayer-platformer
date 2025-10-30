@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+
+* {
+  font-family: 'Tektur', sans-serif;
+  
+}
+body {
+  height: 100vh;
+  background-image: url("americaflag.gif");
+  background-size: cover;
+  color: white;
+}
+.overlay {
+  display: none;
+  width: 131vh;
+  height:  98.5vh;
+  position: absolute;
+}
+#america-overlay {
+  background-image: url("americaflag.gif");
+  background-size: cover;
+  opacity: 0.2;
+}
+#loading {
+  display: flex;
+}
+.middle-centered {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+}
+#oof-overlay {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+#game-over-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+#revive-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#items-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 99;
+}
+.side-button {
+  outline: 0;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.dead-button {
+  background-color: transparent;
+  outline: 0;
+  color: black;
+  border: 0;
+}
+#potion-button {
+  margin-top: 40px;
+}
+
+
+#store {
+  background-color: lightgray;
+  position: absolute;
+  display: none;
+  z-index: 101;
+  color: black;
+}
+#store-button {
+  width: 100%;
+  padding: 1rem;
+  border-radius:0.1rem;
+  margin-top: 1rem;
+}
+#store-items {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.store-item {
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: darkgray;
+  line-height: 0.5rem;
+  text-align: center;
+  margin: 20px; 
+}
+.store-item-img{
+  width: 100px;
+  height: 100px;
+}
+.store-item-text{
+  font-size: 20px;
+  font-weight: bold;
+}
+.store-item-buy {
+    width: 100%;
+}
+.store-item-description {
+  font-size: 10px;
+}
+#main {
+  display: none;
+  height: 100vh;
+}
+#user-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  width: 50vw;
+  margin: auto;
+  background-color: #333;
+  border-radius: 3px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  color: grey;
+}
+
+#username-input {
+  margin: 7px;
+  padding: 9px;
+  outline: 0;
+  border: 0;
+  border-radius: 2px;
+  width: 40%;
+}
+
+#username-submit {
+  margin: 5px;
+  padding: 10px;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: whitesmoke;
+  width: 42.5%;
+}
+
+canvas {
+  border: 3px dashed black;
+  background-color: lightblue;
+  height: 98vh; 
+  margin: 0;
+  display: none;
+  /*display: none*/
+}
+#skins {
+  background-color: white;
+}
+#skin-form{
+  display: none;
+}
+.skin {
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+}
+
+#chat {
+  background-color: #333;
+  margin: 3px;
+  padding: 5px;
+  border-radius: 3px;
+  height: 300px;
+}
+
+#message-input {
+  margin: 7px;
+  padding: 9px;
+  outline: 0;
+  border: 0;
+  border-radius: 2px;
+}
+
+#messages {
+  color: black;
+  height: 250px;
+  overflow: scroll;
+  background-color: green;
+}
+
+.msg {
+  background-color: whitesmoke;
+  border-radius: 2px;
+  padding: 1px;
+  margin: 5px;
+}
+#message-submit {
+  margin: 5px;
+  padding: 10px;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: whitesmoke;
+}
+
+.me-user {
+  background-color: green;
+}
+
+#message-log {
+  height: 200px;
+  overflow: scroll;
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+}
+
+.log-message {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 80%;
+  margin: 20px;
+}
+.log-user {
+  font-weight: bold;
+}
+.log-message-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.log-img {
+  display: inline;
+}
+#slideshow-overlay {
+  display: block;
+  opacity: 0.2;
+  z-index: 2;
+  background-size: cover;
+}
+#pledge {
+  width: fit-content;
+  height: fit-content;
+}
+#pledge-text {
+  color: white;
+}
